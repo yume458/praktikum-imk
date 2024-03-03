@@ -2,10 +2,122 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tugas form Ayumi</title>
+    <style>
+        fieldset{
+            width: 50%;
+            height: 100%;
+            border: 1px solid black;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(199, 244, 177);
+        }
+        table{
+            vertical-align: top;
+            margin-top: 5px ;
+        }
+        h1{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h2{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        legend{
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
 </head>
-<body>
-    hai halo
+<body background="ijo.jpg">
+    <form method="post" action="#">
+       <h1>NCTZEN ACE MEMBERSHIP</h1>
+       &nbsp;
+       <marquee behavior="500" direction="400"><b>Sign up to get the special benefits from KWANGYA club.</b></marquee>
+        <fieldset>
+            <legend><b>Sign Up</b></legend>
+            <table >
+                <tr>
+                    <td><label for="email"> Mobile Number or Email :</label></td>
+                    <td><input type="text" id="email"></td>
+                </tr> 
+                <tr>  
+                    <td><label for="fullname"> Fullname :</label></td>
+                    <td><input type="text" id="fullname"></td>
+                </tr>
+                <tr>    
+                    <td><label for="username"> Username :</label></td>
+                    <td><input type="text" id="username"></td>
+                </tr>
+                <tr>  
+                    <td><label for="Password">Password :</label></td>
+                    <td><input type="password" id="Password"></td>
+                </tr>  
+                <tr>
+                    <td><label for="DOB">Date Of Birth :</label></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td>
+                        Gender :
+                        <br>
+                        <input type="radio" id="gender1" name="jk"><label for="gender1">Male</label>
+                        <input type="radio" id="gender2" name="jk"><label for="gender2">Female</label>
+                    </td>    
+                </tr>   
+                <tr>
+                    <td><label for="bias">Bias :</label></td>
+                    <td>
+                        <select name="Bias" id="Bias">
+                            <Option value="select">Select</Option>
+                            <Option value="Taeyong">Taeyong</Option>
+                            <Option value="taeil">Taeil</Option>
+                            <Option value="johnny">Johnny</Option>
+                            <Option value="yuta">Yuta</Option>
+                            <Option value="kun">Kun</Option>
+                            <Option value="doyoung">Doyoung</Option>
+                            <Option value="ten">Ten</Option>
+                            <Option value="jaehyun">Jaehyun</Option>
+                            <Option value="winwin">Winwin</Option>
+                            <Option value="jungwoo">Jungwoo</Option>
+                            <Option value="lucas">Lucas</Option>
+                            <Option value="mark">Mark</Option>
+                            <Option value="xiaojun">Xiaojun</Option>
+                            <Option value="hendery">Hendery</Option>
+                            <Option value="Renjun">Renjun</Option>
+                            <Option value="jeno">Jeno</Option>
+                            <Option value="haechan">Haechan</Option>
+                            <Option value="jaemin">Jaemin</Option>
+                            <Option value="yangyang">Yangyang</Option>
+                            <Option value="shotaro">Shotaro</Option>
+                            <Option value="sungchan">Sungchan</Option>
+                            <Option value="chenle">Chenle</Option>
+                            <Option value="jisung">Jisung</Option>
+                        </select></td>
+                </tr>
+                <tr>
+                <td><label for="reason">The reason why you love nct :</label></td>
+                <td><textarea name="reason" id="reason" rows="10" cols="50"></textarea></td>
+                </tr>
+                <tr>
+                    <td><i>Choose your Favorite :</i></td>
+                    <td>
+                    <input type="checkbox" id="nct"><label for="nct">NCT 127</label>
+                    <input type="checkbox" id="nct"><label for="nct">NCT DREAM</label>
+                    <input type="checkbox" id="nct"><label for="nct">NCT U </label>
+                    <input type="checkbox" id="nct"><label for="nct">WAYV</label>
+                    </td>
+                </tr>    
+                <tr>
+                   <td><input type="submit" value="Sign Up"></td>
+                </tr>
+           
+
+
+
+        </fieldset>
+    </form>
 </body>
 </html>
